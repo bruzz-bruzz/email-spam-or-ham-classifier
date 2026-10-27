@@ -3,14 +3,7 @@
 A full-stack application to detect spam in email text.
 
 ## Architecture Overview
-```mermaid
-graph TD
-    User -->|Enter Text| Frontend
-    Frontend -->|POST /predict| Backend
-    Backend -->|Analyze| AI_Service
-    Backend -->|Return Result| Frontend
-    Frontend -->|Display| User
-```
+![Flowchart](flowchart.png)
 
 ## Project Structure
 - [Backend](./backend/README.md): Node.js/Express server handling request validation, rate limiting, and spam prediction logic.

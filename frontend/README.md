@@ -3,16 +3,7 @@
 React application for spam detection UI.
 
 ## Workflow
-```mermaid
-graph TD
-    User --> Input[Enter Email Text]
-    Input --> Click[Click 'Detect Spam']
-    Click --> Fetch[POST /predict]
-    Fetch --> Result{Result Received?}
-    Result -->|Success| Show[Display Prediction]
-    Result -->|Error| Toast[Show Error Toast]
-```
-
+![Flowchart](flowchart.png)
 ## Features
 - Tailwind CSS styling
 - Responsive design
